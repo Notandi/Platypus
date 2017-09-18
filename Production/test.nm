@@ -1,0 +1,94 @@
+fibo(n)
+{
+	var i,f1,f2,tmp;
+	f1 = 1;
+	f2 = 1;
+	i = 0;
+	while( i!=n )
+	{
+		tmp = f1+f2;
+		f1 = f2;
+		f2 = tmp;
+		i = i+1;
+	};
+	f1;
+}
+
+f(n)
+{
+	if( n<2 )
+	{
+		1;
+	}
+	else
+	{
+		f(n-1)+ f(n-2);
+	};
+}
+
+retTest(n) 
+{
+	if( n > 2)
+	{
+		return 2;
+	};
+	return 3;
+}
+
+main()
+{
+	var x; 
+	x = "data":"data2":"data3":1:2:3:4:5:null;
+
+	writeln(retTest(2));
+	writeln(retTest(4));
+
+	writeln(-1);
+	writeln(true&&false);
+	writeln(true||false);
+	writeln(true&&true);
+	writeln(true||true);
+	writeln(!false);
+	writeln("data":"data2":true:"data3":1:2:3:4:5:fibo(35):null);
+	writeln(head(tail(x)));
+	writeln(1:2:3:null);
+	writeln("fibo(35)="++fibo(35));
+	writeln("fibo(35)="++f(35));
+	
+	if(true) {writeln("Rétt1");};
+
+	if(false) {writeln("Rangt");};
+
+	if(false) {writeln("Rangt");}
+	elsif(true) {writeln("Rétt2");}
+	else {writeln("Rangt");};
+
+	if(false) {writeln("Rangt");}
+	else {writeln("Rétt3");};
+
+	if(false) {writeln("Rangt");}
+	elsif(false) {writeln("Rangt");}
+	elsif(true) {writeln("Rétt4");}
+	elsif(true) {writeln("Rangt");}
+	else {writeln("Rangt");};
+
+	if(false) {writeln("Rangt");}
+	elsif(false) {writeln("Rangt");}
+	elsif(true) {writeln("Rétt5");}
+	elsif(true) {writeln("Rangt");};
+
+	if(false) {writeln("Rangt");}
+	elsif(false) {writeln("Rangt");}
+	elsif(false) {writeln("Rangt");}
+	elsif(false) {writeln("Rangt");}
+	elsif(false) {writeln("Rangt");};
+
+	writeln(if(true) {"Rétt6";} else {"Rangt";});
+	writeln(if(true) {"Rétt7";});
+	writeln(if(false) {"Rangt";} else {"Rétt8";});
+	writeln(if(false) {"Rangt";} elsif(true) {"Rétt9";} else {"Rangt";});
+	writeln(if(false) {"Rangt";} elsif(false) {"Rangt";} elsif(true) {"Rétt10";} else {"Rangt";});
+	writeln(if(false) {"Rangt";} elsif(false) {"Rangt";} elsif(true) {"Rétt11";});
+	writeln(if(false) {"Rangt";} elsif(false) {"Rangt";} elsif(false) {"Rangt";} else {"Rétt12";});
+	writeln(if(true) {"Ré";}++if(false) {"Rangt";} else {"tt13";});
+}
