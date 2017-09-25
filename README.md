@@ -1,2 +1,3 @@
 # Platypus
-<embed src="https://github.com/Notandi/Platypus/raw/master/Production/handbok.pdf" width="500" height="375" type='application/pdf'>
+<iframe src="http://docs.google.com/gview?url=https://github.com/Notandi/Platypus/raw/master/Production/handbok.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+
